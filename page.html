@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fixper</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link media="(max-width: 1439px)" rel="stylesheet" href="styles/tablet.css">
+	<link media="(max-width: 779px)" rel="stylesheet" href="styles/mobile.css">
+</head>
+<body>
+	<header class="header">
+		<ul class="header__list">
+			<li class="header__list_logo"><a href="#" class="header__list__item">
+				<svg class="logo" width="112" height="34" viewBox="0 0 112 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<path d="M34.2265 6.52711H49.2885V10.4818H38.6238V15.0075H46.9471V18.9622H38.6238V27H34.2265V6.52711ZM54.8365 12.6661V27H50.8818V12.6661H54.8365ZM54.4938 6.98396C54.9126 7.38371 55.122 7.91671 55.122 8.58296C55.122 9.23969 54.9126 9.76794 54.4938 10.1677C54.0751 10.5674 53.504 10.7673 52.7806 10.7673C52.1144 10.7673 51.5814 10.5674 51.1816 10.1677C50.7914 9.76794 50.5963 9.23969 50.5963 8.58296C50.5963 7.91671 50.7962 7.38371 51.1959 6.98396C51.5957 6.58421 52.1239 6.38434 52.7806 6.38434C53.504 6.38434 54.0751 6.58421 54.4938 6.98396ZM62.8829 22.4743L59.8134 27H55.5732L60.3987 19.6903L55.8587 12.6661H60.2559L62.8829 16.9063L65.5098 12.6661H69.907L65.367 19.6903L70.1926 27H65.9524L62.8829 22.4743ZM78.9528 27.2855C78.1343 27.2855 77.3681 27.119 76.6543 26.7858C75.9499 26.4432 75.4502 26.1053 75.1552 25.7722L74.7126 25.244V33.139H70.7722V12.6661H74.7126V14.4222C74.7507 14.3651 74.8078 14.2937 74.8839 14.208C74.9696 14.1224 75.1409 13.9653 75.3979 13.7369C75.6644 13.4989 75.9499 13.2895 76.2545 13.1087C76.5591 12.9183 76.9541 12.7518 77.4395 12.609C77.9249 12.4567 78.4293 12.3806 78.9528 12.3806C80.8088 12.3806 82.4173 13.1039 83.7784 14.5507C85.1489 15.9878 85.8342 17.7487 85.8342 19.8331C85.8342 21.9175 85.1489 23.683 83.7784 25.1297C82.4173 26.5669 80.8088 27.2855 78.9528 27.2855ZM80.7089 17.0063C80.0331 16.2639 79.205 15.8927 78.2247 15.8927C77.2539 15.8927 76.4258 16.2639 75.7405 17.0063C75.0553 17.7391 74.7126 18.6814 74.7126 19.8331C74.7126 20.9847 75.0553 21.9317 75.7405 22.6741C76.4258 23.4165 77.2539 23.7877 78.2247 23.7877C79.205 23.7877 80.0331 23.4165 80.7089 22.6741C81.3941 21.9317 81.7368 20.9847 81.7368 19.8331C81.7368 18.6814 81.3941 17.7391 80.7089 17.0063ZM100.89 21.1465H90.5113C90.6636 21.927 91.0776 22.5885 91.7534 23.131C92.4291 23.664 93.281 23.9305 94.3089 23.9305C95.0513 23.9305 95.7366 23.7877 96.3648 23.5022C97.0025 23.2071 97.4498 22.9121 97.7068 22.617L98.1208 22.1745L100.162 24.8014L99.9054 25.0584C99.7817 25.1821 99.5247 25.3867 99.1345 25.6723C98.7442 25.9578 98.3302 26.2148 97.8924 26.4432C97.4546 26.6621 96.8835 26.8572 96.1792 27.0286C95.4844 27.1999 94.7658 27.2855 94.0234 27.2855C91.9199 27.2855 90.1258 26.5574 88.641 25.1012C87.1562 23.6354 86.4139 21.8794 86.4139 19.8331C86.4139 17.7867 87.1467 16.0354 88.6125 14.5792C90.0782 13.1135 91.8343 12.3806 93.8806 12.3806C95.9269 12.3806 97.6306 13.0659 98.9917 14.4364C100.353 15.7975 101.033 17.5012 101.033 19.5475L100.89 21.1465ZM95.9936 16.4923C95.4225 15.9974 94.7182 15.7499 93.8806 15.7499C93.043 15.7499 92.3292 15.9926 91.7391 16.478C91.1585 16.9634 90.7492 17.5964 90.5113 18.3768H97.0929C96.9406 17.6154 96.5742 16.9872 95.9936 16.4923ZM111.136 12.5234V16.478C110.84 16.3828 110.403 16.3305 109.822 16.321C108.785 16.321 107.961 16.6493 107.352 17.3061C106.753 17.9628 106.453 18.9051 106.453 20.1329V27H102.512V12.6661H106.453V14.4222C106.567 14.2889 106.729 14.1176 106.938 13.9082C107.148 13.6893 107.604 13.4038 108.309 13.0516C109.023 12.6994 109.77 12.5234 110.55 12.5234H111.136Z" fill="white"/>
+					<rect width="23.1" height="33" fill="url(#pattern0)"/>
+					<defs>
+						<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+							<use xlink:href="#image0_0_1" transform="matrix(0.00473037 0 0 0.00331126 0.0293283 0)"/>
+						</pattern>
+						<image id="image0_0_1" width="199" height="302" xlink:href="data:image/png;base64,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"/>
+					</defs>
+				</svg>
+			</a></li>
+
+			<li class="header__list_nav">
+				<nav>
+					<ul class="header__nav">
+						<li><a href="#" class="header__nav__item">
+							<span class="header__nav__label">Диагностика</span>
+						</a></li>
+
+						<li><a href="#" class="header__nav__item">
+							<span class="header__nav__label">Стоимость</span>
+						</a></li>
+
+						<li><a href="#" class="header__nav__item">
+							<span class="header__nav__label">Мастера</span>
+						</a></li>
+
+						<li><a href="#" class="header__nav__item">
+							<span class="header__nav__label">Отзывы</span>
+						</a></li>
+
+						<li><a href="#" class="header__nav__item">
+							<span class="header__nav__label">Вопросы</span>
+						</a></li>
+					</ul>
+				</nav>
+			</li>
+
+			<li class="header__list__item_box">
+				<div class="geo pointer">
+					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.86111L8.55254 11.1944L12.3107 20L20.1171 0L0 7.86111Z" fill="#FFC464"/>
+					</svg>
+					<span class="header__list__label">Москва</span>
+				</div>
+				<button class="call pointer">Позвонить</button>
+			</li>
+		</ul>
+
+		<div class="header__background">
+			<svg class="header__graphic"width="450" height="673" viewBox="0 0 450 673" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect width="448.5" height="448.5" transform="matrix(-1 0 0 1 449.25 224.5)" fill="#A284E8"/>
+				<path d="M449.25 584.5C449.25 385.678 288.072 224.5 89.25 224.5H0.75V673H449.25V584.5Z" fill="#FFC464"/>
+				<path d="M225 0.25H112.875V22.375C112.875 72.0806 153.169 112.375 202.875 112.375H225V0.25Z" fill="#EE6C6C"/>
+				<path d="M112.875 0.25H0.749931V112.375H22.875C72.5806 112.375 112.875 72.0806 112.875 22.375V0.25Z" fill="#EE6C6C"/>
+				<path d="M225 112.375H202.875C153.169 112.375 112.875 152.669 112.875 202.375V224.5H225V112.375Z" fill="#EE6C6C"/>
+				<path d="M112.875 202.375C112.875 152.669 72.5806 112.375 22.875 112.375H0.749931V224.5H112.875V202.375Z" fill="#EE6C6C"/>
+			</svg>
+			<img src="images/repairman.png" alt="repairman" class="header__repairman">
+			<img src="images/washer.png" alt="washer" class="header__washer">
+		</div>
+		
+		<div class="offer">
+			<span class="offer__title">Ремонт стиральных машин на дому c годовой гарантией</span>
+			<span class="offer__description">
+				<span class="offer__description_color">Отремонтируем на дому</span>
+				или бесплатно завезем и доставим обратно из сервисного центра
+			</span>
+			<button class="offer__button pointer">
+				Заказать звонок
+			</button>
+		</div>
+	</header>
+
+	<ul class="discount_banner">
+		<div class="discount_banner__wrap">
+			<li>
+				<button class="discount_banner__cross pointer">
+					<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.5 1L10.5 10" stroke="white" stroke-width="2"/>
+						<path d="M10.5 1L1.5 10" stroke="white" stroke-width="2"/>
+					</svg>
+				</button>
+			</li>
+			<li class="discount_banner_center">
+				<svg class="discount_banner__circle" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="5" cy="5" r="5" fill="#78C23E"/>
+				</svg>
+				<span class="discount_banner__text">
+					<span class="discount_banner__text_color">Мы открыты и принимаем заказы до 21:00, </span>
+					позвоните сейчас и мы сделаем скидку 15%
+				</span>
+			</li>
+			<li class="discount_banner_right">
+				<a href="#" class="discount_banner__link">
+					<span class="discount_banner__link__text">Получить скидку</span>
+					<svg class="discount_banner__link__arrow" width="51" height="8" viewBox="0 0 51 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M50.3536 4.35355C50.5488 4.15829 50.5488 3.84171 50.3536 3.64645L47.1716 0.464466C46.9763 0.269204 46.6597 0.269204 46.4645 0.464466C46.2692 0.659728 46.2692 0.976311 46.4645 1.17157L49.2929 4L46.4645 6.82843C46.2692 7.02369 46.2692 7.34027 46.4645 7.53553C46.6597 7.7308 46.9763 7.7308 47.1716 7.53553L50.3536 4.35355ZM0 4.5H50V3.5H0V4.5Z" fill="#FFC464"/>
+					</svg>
+				</a>
+			</li>
+		</div>
+	</ul>
+
+	<div class="main">
+		<section class="advantages">
+			<article class="advantages__block">
+				<svg xmlns="http://www.w3.org/2000/svg" width="112" height="75" viewBox="0 0 112 75" fill="none">
+				  <path d="M22.9839 37.5H89.5161V61C89.5161 68.732 83.2481 75 75.5161 75H36.9839C29.2519 75 22.9839 68.732 22.9839 61V37.5Z" fill="#FFBA4A"/>
+				  <path d="M65.3228 42.3389H79.8389V61.5324C79.8389 64.2938 77.6003 66.5324 74.8389 66.5324H70.3227C67.5613 66.5324 65.3228 64.2938 65.3228 61.5324V42.3389Z" fill="#CA8CBB"/>
+				  <path d="M38.7095 31.4517H53.2256V61.5323C53.2256 64.2937 50.987 66.5323 48.2256 66.5323H43.7095C40.948 66.5323 38.7095 64.2937 38.7095 61.5323V31.4517Z" fill="#A03C7D"/>
+				  <circle cx="45.9677" cy="18.1454" r="16.9355" fill="#A03C7D"/>
+				  <path d="M69.5567 13.4703V42.3386H75.6051V13.4703L77.4196 8.22158L75.6051 3.62891H69.5567L67.7422 8.22158L69.5567 13.4703Z" fill="#993280"/>
+				  <path d="M45.9678 22.9839L39.9194 19.9597V1.20968V0.604839V0H51.4114V19.9597L45.9678 22.9839Z" fill="white"/>
+				  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.081 42.3389H0V56.4199H0.000102251V49.3797C3.87992 49.3797 7.02674 52.518 7.04055 56.3946C7.05434 52.5263 10.1877 49.3932 14.056 49.3797C10.1878 49.3663 7.0545 46.2333 7.04055 42.3652C7.02637 46.2415 3.87969 49.3794 0.000102251 49.3794V42.3389H7.0406V42.3393H14.081V42.3389Z" fill="#EB5555"/>
+				  <path fill-rule="evenodd" clip-rule="evenodd" d="M82.2578 22.1206C90.4534 22.1202 97.0996 15.4864 97.1199 7.29547C97.1402 15.4866 103.787 22.1206 111.983 22.1206V7.25781H111.983V36.9834H111.983V22.1209C103.774 22.1209 97.12 28.7751 97.1198 36.9834H97.1195C97.1193 28.7754 90.4657 22.1215 82.2578 22.1209V22.1206Z" fill="#EB5555"/></svg>
+				<span class="advantages__text">
+					Фирменные запчасти у мастеров в наличии
+				</span>
+			</article>
+
+			<article class="advantages__block">
+				<svg xmlns="http://www.w3.org/2000/svg" width="105" height="74" viewBox="0 0 105 74" fill="none">
+				  <rect x="44.3984" y="2.50391" width="11.7207" height="9.37653" rx="2.34413" fill="#A03C7D"/>
+				  <rect x="67.832" y="8.93994" width="5.26259" height="7.01679" rx="0.877099" transform="rotate(30 67.832 8.93994)" fill="#A03C7D"/>
+				  <path d="M66.497 7.95197C66.7392 7.53246 67.2756 7.38873 67.6951 7.63093L73.7089 11.103C74.1284 11.3452 74.2722 11.8816 74.03 12.3011L72.4258 15.0796L64.8928 10.7305L66.497 7.95197Z" fill="#A03C7D"/>
+				  <rect width="5.26259" height="7.01679" rx="0.877099" transform="matrix(-0.866025 0.5 0.5 0.866025 31.1094 9.21924)" fill="#A03C7D"/>
+				  <path d="M32.4454 7.95197C32.2032 7.53246 31.6668 7.38873 31.2472 7.63093L25.2335 11.103C24.814 11.3452 24.6702 11.8816 24.9124 12.3011L26.5166 15.0796L34.0496 10.7305L32.4454 7.95197Z" fill="#A03C7D"/>
+				  <circle cx="49.6732" cy="41.768" r="32.2318" fill="#FFBA4A"/>
+				  <circle cx="49.6732" cy="41.768" r="29.1051" stroke="#EB5555" stroke-opacity="0.3" stroke-width="6.25352"/>
+				  <path fill-rule="evenodd" clip-rule="evenodd" d="M91.9999 0C92 7.17968 97.8202 13 105 13V0H105V26H105V13.0003C97.8203 13.0003 92.0001 18.8204 91.9999 26H91.9993C91.9991 18.8207 86.1793 13.0007 79 13.0003V13C86.1794 12.9996 91.9993 7.17948 91.9993 0H91.9999Z" fill="#EB5555"/>
+				  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 57.5892V57.5901C3.88168 57.5903 7.02856 60.7362 7.03033 64.6175C7.03209 60.736 10.1791 57.5901 14.061 57.5901V64.6199H14.0613V50.5586H7.03014C7.03014 54.4413 3.88268 57.589 0 57.5892ZM7.03032 50.559H14.061V57.5896C10.1781 57.5896 7.03032 54.4419 7.03032 50.559Z" fill="#EB5555"/>
+				  <path d="M32.6777 42.3543H53.1889C53.1889 42.3543 61.364 28.6017 67.3143 18.7607" stroke="#A03C7D" stroke-width="6.25352"/></svg>
+				<span class="advantages__text">
+					Большинство ремонтов делаем за час на дому
+				</span>
+			</article>
+
+			<article class="advantages__block">
+				<svg xmlns="http://www.w3.org/2000/svg" width="73" height="75" viewBox="0 0 73 75" fill="none">
+				  <path fill-rule="evenodd" clip-rule="evenodd" d="M61.9566 0H61.9565V5.43505C64.9573 5.43505 67.39 7.867 67.3913 10.8675C67.3926 7.867 69.8254 5.43505 72.8261 5.43505C69.8285 5.43505 67.3977 3.0082 67.3913 0.0120896C67.3848 3.00808 64.9541 5.43478 61.9566 5.43478V0ZM67.3914 0V0.00026537H72.8261L72.8261 0H67.3914Z" fill="#EB5555"/>
+				  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.326 29.3478V29.3477H0V39.674C5.70256 39.6743 10.3253 44.2972 10.3255 49.9998H10.326C10.3261 44.297 14.9492 39.674 20.6521 39.674V49.9998H20.6522V29.3477H20.6521V39.6737C14.9676 39.6737 10.3558 35.0804 10.3261 29.4028C10.2965 35.0804 5.68476 39.6738 0.000190046 39.6738V29.3478H10.326Z" fill="#EB5555"/>
+				  <path d="M2.17383 17.4346C2.17383 10.8072 7.54641 5.43457 14.1738 5.43457H52.1304C58.7578 5.43457 64.1303 10.8072 64.1303 17.4346V26.0867H2.17383V17.4346Z" fill="#FFBA4A"/>
+				  <path d="M28.2607 17.4346C28.2607 10.8071 33.6333 5.43457 40.2607 5.43457H52.1303C58.7577 5.43457 64.1303 10.8072 64.1303 17.4346V64.1302H28.2607V17.4346Z" fill="#FFBA4A"/>
+				  <path d="M2.17383 17.4346C2.17383 10.8072 7.54641 5.43457 14.1738 5.43457H16.2608C22.8882 5.43457 28.2608 10.8072 28.2608 17.4346V26.0867H2.17383V17.4346Z" fill="#C99035"/>
+				  <rect x="36.9565" y="20.6523" width="33.6957" height="4.8913" fill="#993280"/>
+				  <rect x="36.9565" y="30.4346" width="33.6957" height="4.8913" fill="#A03C7D"/>
+				  <rect x="36.9565" y="40.2173" width="22.8261" height="4.8913" fill="#A03C7D"/>
+				  <path d="M39.1304 74.9999V64.1304H47.826V74.9999L43.4782 70.6521L39.1304 74.9999Z" fill="#993280"/>
+				  <circle cx="43.4783" cy="59.7825" r="6.52174" fill="#EB5555"/></svg>
+				<span class="advantages__text">
+					Профессиональный инструмент под любую задачу
+				</span>
+			</article>
+
+			<article class="advantages__block">
+				<svg xmlns="http://www.w3.org/2000/svg" width="91" height="75" viewBox="0 0 91 75" fill="none">
+				  <path d="M11.6377 54.0864C11.6377 46.3544 17.9057 40.0864 25.6377 40.0864H70.0515C77.7835 40.0864 84.0515 46.3544 84.0515 54.0864V75.0002H11.6377V54.0864Z" fill="#FFBA4A"/>
+				  <path fill-rule="evenodd" clip-rule="evenodd" d="M90.5197 29.7412H78.8794V41.3815H78.8796V35.5616C82.0863 35.5616 84.6872 38.1549 84.6997 41.3586C84.7121 38.1549 87.3131 35.5616 90.5197 35.5616V35.5616C87.3054 35.5615 84.6996 32.9558 84.6996 29.7414H90.5197V29.7412ZM84.6996 29.7414C84.6996 32.9557 82.0938 35.5614 78.8795 35.5614V29.7413H84.6996L84.6996 29.7414Z" fill="#EB5555"/>
+				  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2859 11.6377C12.2859 18.4234 17.7868 23.9242 24.5725 23.9242V11.6377H24.5732V36.2109H24.5725V23.9245C17.7869 23.9245 12.286 29.4253 12.2859 36.2109H12.2857C12.2855 29.4256 6.78519 23.925 0 23.9245V23.9243C6.78535 23.9239 12.2858 18.4232 12.2858 11.6378H0V11.6377H12.2859Z" fill="#EB5555"/>
+				  <circle cx="48.4916" cy="17.4569" r="17.4569" fill="#FFBA4A"/>
+				  <rect x="27.1553" y="62.0688" width="41.3793" height="12.931" fill="#A03C7D"/>
+				  <rect x="62.0688" y="40.0864" width="6.46552" height="34.9138" fill="#A03C7D"/>
+				  <rect x="27.1553" y="40.0864" width="6.46552" height="34.9138" fill="#A03C7D"/></svg>
+				<span class="advantages__text">
+					Квалифицированные и опытные мастера
+				</span>
+			</article>
+		</section>
+
+		<section class="problem">	
+			<header class="problem__header">
+				<span class="problem__header_description">Онлайн-диагностика</span>
+				<h2 class="problem__header_title">Какая у вас проблема?</h1>
+			</header>
+
+			<article class="problem__selection">
+				<div class="problem__selection__buttons">
+					<button class="problem__selection__button pointer">Не включается</button>
+					<button class="problem__selection__button pointer">Не выключается</button>
+					<button class="problem__selection__button pointer">Не нагревает воду</button>
+					<button class="problem__selection__button pointer">Все работет, но мне скучно и я хочу пообщаться с мастером</button>
+					<button class="problem__selection__button pointer">Не крутится барабан</button>
+					<button class="problem__selection__button pointer">Не работает кнопка включения</button>
+					<button class="problem__selection__button pointer">Не выключается</button>
+					<button class="problem__selection__button pointer">Иная проблема</button>
+					<button class="problem__selection__button pointer">Не крутится барабан</button>
+					<button class="problem__selection__button pointer">Не крутится барабан</button>
+					<button class="problem__selection__button pointer">Не работает кнопка включения</button>
+				</div>
+
+				<div class="problem__selection__dropdown ">	
+					<button class="problem__selection__dropdown__button pointer">Выберите проблему</button>
+				</div>
+
+				<div class="problem__selection__hint">
+					<svg class="problem__selection__hint__svg" width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.4641 3C16.9245 0.333335 13.0755 0.333328 11.5359 3L2.00962 19.5C0.470019 22.1667 2.39451 25.5 5.47372 25.5H24.5263C27.6055 25.5 29.53 22.1667 27.9904 19.5L18.4641 3Z" stroke="#FFC464" stroke-width="2"/>
+						<path d="M13.832 8.8H16.808L16.312 16.112H14.328L13.832 8.8ZM15.32 20.128C14.8827 20.128 14.5147 19.9893 14.216 19.712C13.928 19.424 13.784 19.0773 13.784 18.672C13.784 18.2667 13.928 17.9307 14.216 17.664C14.504 17.3867 14.872 17.248 15.32 17.248C15.768 17.248 16.136 17.3867 16.424 17.664C16.712 17.9307 16.856 18.2667 16.856 18.672C16.856 19.0773 16.7067 19.424 16.408 19.712C16.12 19.9893 15.7573 20.128 15.32 20.128Z" fill="#FFC464"/>
+					</svg>
+					<span class="problem__selection__hint__text">Выберите проблему и узнайте её решение</span>
+				</div>
+			</article>
+
+			<article class="problem__background">
+				<svg class="problem__background__graphic" width="406" height="812" viewBox="0 0 406 812" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="406" y="406" width="406" height="406" transform="rotate(180 406 406)" fill="#EE6C6C"/>
+					<path d="M406 406L-6.10352e-05 406L-6.50566e-05 360C-8.24382e-05 161.177 161.177 -3.96321e-05 360 -5.70137e-05L405.999 -6.10352e-05L406 406Z" fill="#FFA3B3"/>
+					<path d="M406 452C406 650.822 244.823 812 46.0001 812L0.000427246 812L0.000391752 406L406 406L406 452Z" fill="#FFC464"/>
+					<path d="M406 405.999L304.5 405.999L304.5 394.499C304.5 344.793 344.794 304.499 394.5 304.499L406 304.499L406 405.999Z" fill="#A95094"/>
+					<path d="M304.5 406L203 406L203 304.5L214.5 304.5C264.205 304.5 304.5 344.794 304.5 394.5L304.5 406Z" fill="#A95094"/>
+					<path d="M406 304.5L394.5 304.5C344.794 304.5 304.5 264.205 304.5 214.5L304.5 203L406 203L406 304.5Z" fill="#A95094"/>
+					<path d="M304.5 214.5C304.5 264.205 264.205 304.5 214.5 304.5L203 304.5L203 203L304.5 203L304.5 214.5Z" fill="#A95094"/>
+				</svg>
+				<img src="images/washer_problem.png" alt="стиральная машина" class="problem__background__washer">
+				<svg class="problem__background__square-star" xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+				  <path d="M82 82L41 82C41 59.3563 59.3563 41 82 41L82 82Z" fill="#A95094"/>
+				  <path d="M41 82L0 82L-3.58433e-06 41C22.6437 41 41 59.3563 41 82Z" fill="#A95094"/>
+				  <path d="M82 41C59.3563 41 41 22.6437 41 3.79166e-05L82 3.43323e-05L82 41Z" fill="#A95094"/>
+				  <path d="M41 3.43323e-05C41 22.6437 22.6437 41 0 41L-3.58433e-06 3.79166e-05L41 3.43323e-05Z" fill="#A95094"/>
+				</svg>
+			</article>
+		</section>
+
+		<section class="price">
+			<header>
+				<h2 class="price__header">Стоимость работ</h1>
+			</header>
+
+			<table class="price__table price__table_global">
+				<tr class="price__table__row price__table__row_global">
+					<th class="price__table_left">Услуга</th>
+					<th>Стоимость запчасти</th>
+					<th>Стоимость работ</th>
+				</tr>
+				<tr class="price__table__row price__table__row_global">
+					<td class="price__table_left">Выезд мастера</td>
+					<td class="price__table__price"></td>
+					<td class="price__table__price price__table__price_free">Бесплатно</td>
+				</tr>
+				<tr class="price__table__row price__table__row_global">
+					<td class="price__table_left">Диагностика стиральной машины</td>
+					<td class="price__table__price"></td>
+					<td class="price__table__price price__table__price_free">Бесплатно</td>
+				</tr>
+				<tr class="price__table__row price__table__row_global">
+					<td class="price__table_left">Замена блока питания</td>
+					<td class="price__table__price">от 750₽</td>
+					<td class="price__table__price">900₽</td>
+				</tr>
+				<tr class="price__table__row price__table__row_global">
+					<td class="price__table_left">Замена помпы</td>
+					<td class="price__table__price">от 8880₽</td>
+					<td class="price__table__price">1900₽</td>
+				</tr>
+				<tr class="price__table__row price__table__row_global">
+					<td class="price__table_left">Замена подшипников</td>
+					<td class="price__table__price">от 1450₽</td>
+					<td class="price__table__price">750₽</td>
+				</tr>
+			</table>
+
+			<table class="price__table price__table_mobile">
+				<tr class="price__table__row">
+					<tr class="price__table__row">
+						<td class="price__table_left price__table__name">Выезд мастера</td>
+					</tr>
+					<tr class="price__table__row price__table__row_global">
+						<td class="price__table_left">Стоимость работ</td>
+						<td class="price__table__price price__table__price_free">Бесплатно</td>
+					</tr>
+				</tr>
+				<tr class="price__table__row">
+					<tr class="price__table__row">
+						<td class="price__table_left price__table__name">Диагностика стиральной машины</td>
+					</tr>
+					<tr class="price__table__row price__table__row_global">
+						<td class="price__table_left">Стоимость работ</td>
+						<td class="price__table__price price__table__price_free">Бесплатно</td>
+					</tr>
+				</tr>
+				<tr class="price__table__row">
+					<tr class="price__table__row">
+						<td class="price__table_left price__table__name">Замена блока питания</td>
+					</tr>
+					<tr class="price__table__row">
+						<td class="price__table_left">Стоимость работ</td>
+						<td class="price__table__price">900₽</td>
+					</tr>
+					<tr class="price__table__row price__table__row_global">
+						<td class="price__table_left">Стоимость запчасти</td>
+						<td class="price__table__price">от 750₽</td>
+					</tr>
+				</tr>
+				<tr class="price__table__row">
+					<tr class="price__table__row">
+						<td class="price__table_left price__table__name">Замена помпы</td>
+					</tr>
+					<tr class="price__table__row">
+						<td class="price__table_left">Стоимость работ</td>
+						<td class="price__table__price">1900₽</td>
+					</tr>
+					<tr class="price__table__row price__table__row_global">
+						<td class="price__table_left">Стоимость запчасти</td>
+						<td class="price__table__price">от 8880₽</td>
+					</tr>
+				</tr>
+				<tr class="price__table__row">
+					<tr class="price__table__row">
+						<td class="price__table_left price__table__name">Замена подшипников</td>
+					</tr>
+					<tr class="price__table__row">
+						<td class="price__table_left">Стоимость работ</td>
+						<td class="price__table__price">750₽</td>
+					</tr>
+					<tr class="price__table__row price__table__row_global">
+						<td class="price__table_left">Стоимость запчасти</td>
+						<td class="price__table__price">от 1450₽</td>
+					</tr>
+				</tr>
+			</table>
+
+			<div class="price__show pointer">
+				<button class="price__show__button pointer">
+					Показать все цены
+				</button>
+				<svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+				  <path d="M21.8661 9.68178C21.2871 7.44184 19.9494 5.47194 18.0809 4.10773C16.2123 2.74352 13.9286 2.0694 11.6187 2.20025C9.30889 2.33109 7.11586 3.25879 5.41333 4.82529C3.7108 6.39179 2.6041 8.50015 2.2818 10.7911C1.9595 13.0821 2.44154 15.414 3.64579 17.3894C4.85003 19.3649 6.70198 20.8616 8.88607 21.6247C11.0702 22.3877 13.4513 22.3699 15.6237 21.5742C17.7961 20.7784 19.6254 19.2541 20.7999 17.2608L19.2021 16.3193C18.2454 17.9429 16.7554 19.1846 14.9858 19.8328C13.2163 20.4809 11.2768 20.4955 9.49774 19.8739C7.7187 19.2524 6.2102 18.0332 5.22929 16.4241C4.24837 14.815 3.85573 12.9156 4.11825 11.0495C4.38078 9.18338 5.28224 7.46602 6.66903 6.19004C8.05582 4.91406 9.84214 4.1584 11.7236 4.05182C13.6051 3.94524 15.4653 4.49434 16.9873 5.60555C18.5094 6.71676 19.599 8.32134 20.0706 10.1459L21.8661 9.68178Z" fill="#96317D"/>
+				  <path d="M14.1279 8.02246L20.8234 10.2965L23.0974 3.60104" stroke="#96317D" stroke-width="2"/>
+				</svg>
+			</div>
+		</section>
+
+		<section class="team">
+			<header class="team__header">
+				<span class="team__header_description">В нашем штате 37 сотрудников</span>
+				<h2 class="team__header_title">Мы большая команда профессионалов</h1>
+			</header>
+
+			<div class="team__wrap">
+				<article class="team__card">
+					<img src="images/repairman1.png" alt="Работник" class="team__card__picture">
+					<div class="team__card__block">
+						<h3 class="team__card__name">Александр Федулов</h3>
+						<span class="team__card__proffesion">Ремонтник</span>
+						<ul class="team__card__list">
+							<li class="team__card__item">398 ремонтных работ</li>
+							<li class="team__card__item">3 года в Fixper</li>
+							<li class="team__card__item">Рейтинг Fixper 4,5</li>
+						</ul>
+					</div>	
+				</article>
+				<article class="team__card">
+					<img src="images/repairman2.png" alt="Работник" class="team__card__picture">
+					<div class="team__card__block">
+						<h3 class="team__card__name">Александр Федулов</h3>
+						<span class="team__card__proffesion">Ремонтник</span>
+						<ul class="team__card__list">
+							<li class="team__card__item">398 ремонтных работ</li>
+							<li class="team__card__item">3 года в Fixper</li>
+							<li class="team__card__item">Рейтинг Fixper 4,5</li>
+						</ul>
+					</div>
+				</article>
+				<article class="team__card">
+					<img src="images/repairman1.png" alt="Работник" class="team__card__picture">
+					<div class="team__card__block">
+						<h3 class="team__card__name">Александр Федулов</h3>
+						<span class="team__card__proffesion">Ремонтник</span>
+						<ul class="team__card__list">
+							<li class="team__card__item">398 ремонтных работ</li>
+							<li class="team__card__item">3 года в Fixper</li>
+							<li class="team__card__item">Рейтинг Fixper 4,5</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+
+			<div class="team__nav__wrap">
+				<div>
+					<input id="radio__team1" class="team__nav__radio" type="radio" name="team">
+					<label for="radio__team1" class="team__nav__label pointer"></label>
+					<input id="radio__team2" class="team__nav__radio" type="radio" name="team">
+					<label for="radio__team2" class="team__nav__label pointer"></label>
+					<input id="radio__team3" class="team__nav__radio" type="radio" name="team">
+					<label for="radio__team3" class="team__nav__label pointer"></label>
+					<input id="radio__team4" class="team__nav__radio" type="radio" name="team">
+					<label for="radio__team4" class="team__nav__label pointer"></label>
+				</div>
+
+				<div class="team__nav_right">
+					<button class="team__nav__button pointer">Назад</button>
+					<button class="team__nav__button team__nav__button_arrow pointer">Далее</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="feedback">
+			<header class="feedback__header">
+				<h2 class="feedback__header_title">Нас высоко оценивают</h2>
+			</header>
+
+			<div class="feedback__wrap">
+				<article class="feedback__card">
+					<div class="feedback__card__client">
+						<img src="images/client.png" alt="клиент" class="feedback__card__avatar">
+						<div class="feedback__card__client__wrap">
+							<h3 class="feedback__card__client__name">Владимир Завертайлов</h3>
+							<h4 class="feedback__card__client__time">15 марта 2021</h4>
+						</div>
+					</div>
+					Знаю AXIS, как опытных экспертов в области создания визуализаций любой сложности. Умеют четко, грамотно и по делу формулировать мысли. Исследовать вопросы. Капают — глубоко. В 3D визуализации стремятся не заработать на клиенте, а решить проблемы и предподнести проект в выгодном свете!
+				</article>
+				<article class="feedback__card">
+					<div class="feedback__card__client">
+						<img src="images/client.png" alt="клиент" class="feedback__card__avatar">
+						<div class="feedback__card__client__wrap">
+							<h3 class="feedback__card__client__name">Владимир Завертайлов</h3>
+							<h4 class="feedback__card__client__time">15 марта 2021</h4>
+						</div>
+					</div>
+					Хочу выразить свою и признательность в решении ремонта стиральной машины Самсунг A600FN, смогли сделать раньше срока и качественно, спасибо большое. Вы лучшие! Всегда буду обращаться к Вам, ваш клиент.
+				</article>
+			</div>
+
+			<div class="team__nav__wrap">
+				<div>
+					<input id="radio__feedback1" class="team__nav__radio" type="radio" name="team">
+					<label for="radio__feedback1" class="team__nav__label pointer"></label>
+					<input id="radio__feedback2" class="team__nav__radio" type="radio" name="team">
+					<label for="radio__feedback2" class="team__nav__label pointer"></label>
+					<input id="radio__feedback3" class="team__nav__radio" type="radio" name="team">
+					<label for="radio__feedback3" class="team__nav__label pointer"></label>
+					<input id="radio__feedback4" class="team__nav__radio" type="radio" name="team">
+					<label for="radio__feedback4" class="team__nav__label pointer"></label>
+				</div>
+
+				<div class="team__nav_right">
+					<button class="team__nav__button pointer">Назад</button>
+					<button class="team__nav__button team__nav__button_arrow pointer">Далее</button>
+				</div>
+			</div>
+		</section>
+
+		
+		<section class="rating">
+			<article class="rating__card">
+				<div class="rating__card__score">
+					<div class="rating__card__score__wrap">
+						<img src="images/Star.svg" alt="Звезда" class="rating__card__score__star">
+						<span class="rating__card__score__point">
+							<span class="rating__card__score__point_big">4,5</span>
+							 / 5.0
+						</span>
+					</div>
+					<span class="rating__card__total">
+						100+ оценок
+					</span>
+				</div>
+
+				<img src="images/google.svg" alt="Google" class="rating__card__company">
+			</article>
+			<article class="rating__card">
+				<div class="rating__card__score">
+					<div class="rating__card__score__wrap">
+						<img src="images/Star.svg" alt="Звезда" class="rating__card__score__star">
+						<span class="rating__card__score__point">
+							<span class="rating__card__score__point_big">4,8</span>
+							 / 5.0
+						</span>
+					</div>
+					<span class="rating__card__total">
+						250+ оценок
+					</span>
+				</div>
+
+				<img src="images/yandex.svg" alt="Яндекс" class="rating__card__company">
+			</article>
+			<article class="rating__card">
+				<div class="rating__card__score">
+					<div class="rating__card__score__wrap">
+						<img src="images/Star.svg" alt="Звезда" class="rating__card__score__star">
+						<span class="rating__card__score__point">
+							<span class="rating__card__score__point_big">4,3</span>
+							 / 5.0
+						</span>
+					</div>
+					<span class="rating__card__total">
+						10 000+ оценок
+					</span>
+				</div>
+
+				<img src="images/fix.svg" alt="Fixcellent" class="rating__card__company_fix">
+			</article>
+		</section>
+
+		<section class="question-and-answer">
+			<header class="question-and-answer__header">
+				<h2 class="question-and-answer__header__title">
+					Часто задаваемые вопросы
+				</h2>
+				<span class="question-and-answer__header__description">
+					Не нашли ответ на свой вопрос?
+					<a href="#" class="question-and-answer__header__description_link">Оставьте заявку</a> и наш специалист
+					свяжется  и ответит на ваш вопрос
+				</span>
+			</header>
+
+			<div class="question-and-answer__wrap">
+				<article class="question-and-answer__block">
+					<span class="question-and-answer__block__decription">
+						Где почитать отзывы о вас?
+					</span>
+					<button class="question-and-answer__block__button pointer">+</button>
+				</article>
+				<article class="question-and-answer__block">
+					<span class="question-and-answer__block__decription">
+						Сколько времени длится ремонт?
+					</span>
+					<button class="question-and-answer__block__button pointer">+</button>
+				</article>
+				<article class="question-and-answer__block">
+					<span class="question-and-answer__block__decription">
+						Какие марки стиральных машин вы ремонтируете?
+					</span>
+					<button class="question-and-answer__block__button pointer">+</button>
+				</article>
+				<article class="question-and-answer__block">
+					<span class="question-and-answer__block__decription">
+						Я живу в московской области, сможете приехать?
+					</span>
+					<button class="question-and-answer__block__button pointer">+</button>
+				</article>
+				<article class="question-and-answer__block">
+					<span class="question-and-answer__block__decription">
+						Как производится контроль качества?
+					</span>
+					<button class="question-and-answer__block__button pointer">+</button>
+				</article>
+			</div>
+		</section>
+
+		<section class="application">
+			<div class="application__block">
+				<header class="application__header">
+					<h2 class="application__header__title">
+						Вызов мастера
+					</h2>
+					<span class="application__header__description">
+						Оставьте заявку сейчас и получите <a href="#" class="application__header__description_link">скидку 15%</a>
+					</span>
+				</header>
+
+				<form action="" class="application__form">
+					<input type="tel" class="application__phone" placeholder="Номер телефона">
+					<button class="application__button">
+						Заказать звонок
+					</button>
+				</form>
+			</div>
+		</section>
+
+		<section class="contacts">
+			<header class="contacts__header">
+				<h2 class="contacts__header__title">Контактная информация</h2>
+			</header>
+
+			<img class = "contacts__map" src="images/map.png" alt="карта">
+
+			<div class="contacts__wrap">
+				<div class="contacts__data">
+					<h3 class="contacts__data_address">ул. Стрелковая, д. 14 (офис 1)</h3>
+					<span class="contacts__data_time">8:00—21:00 без выходных</span>
+				</div>
+
+				<div class="contacts__data">
+					<h3 class="contacts__data_address">ул. Карла Маркса, д. 33 (диспетчерская)</h3>
+					<span class="contacts__data_time">7:00—23:00 без выходных</span>
+				</div>
+
+				<span class="contacts__data contacts__data_mail">iavaisov@gmail.com</span>
+
+				<button class="contacts__button pointer">Позвонить</button>
+			</div>
+		</section>
+	</div>
+
+	<footer>
+		<section class="footer__nav__block">
+			<div class="footer__nav__logo"><a href="#">
+				<svg width="112" height="34" viewBox="0 0 112 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<path d="M34.2265 6.52711H49.2885V10.4818H38.6238V15.0075H46.9471V18.9622H38.6238V27H34.2265V6.52711ZM54.8365 12.6661V27H50.8818V12.6661H54.8365ZM54.4938 6.98396C54.9126 7.38371 55.122 7.91671 55.122 8.58296C55.122 9.23969 54.9126 9.76794 54.4938 10.1677C54.0751 10.5674 53.504 10.7673 52.7806 10.7673C52.1144 10.7673 51.5814 10.5674 51.1816 10.1677C50.7914 9.76794 50.5963 9.23969 50.5963 8.58296C50.5963 7.91671 50.7962 7.38371 51.1959 6.98396C51.5957 6.58421 52.1239 6.38434 52.7806 6.38434C53.504 6.38434 54.0751 6.58421 54.4938 6.98396ZM62.8829 22.4743L59.8134 27H55.5732L60.3987 19.6903L55.8587 12.6661H60.2559L62.8829 16.9063L65.5098 12.6661H69.907L65.367 19.6903L70.1926 27H65.9524L62.8829 22.4743ZM78.9528 27.2855C78.1343 27.2855 77.3681 27.119 76.6543 26.7858C75.9499 26.4432 75.4502 26.1053 75.1552 25.7722L74.7126 25.244V33.139H70.7722V12.6661H74.7126V14.4222C74.7507 14.3651 74.8078 14.2937 74.8839 14.208C74.9696 14.1224 75.1409 13.9653 75.3979 13.7369C75.6644 13.4989 75.9499 13.2895 76.2545 13.1087C76.5591 12.9183 76.9541 12.7518 77.4395 12.609C77.9249 12.4567 78.4293 12.3806 78.9528 12.3806C80.8088 12.3806 82.4173 13.1039 83.7784 14.5507C85.1489 15.9878 85.8342 17.7487 85.8342 19.8331C85.8342 21.9175 85.1489 23.683 83.7784 25.1297C82.4173 26.5669 80.8088 27.2855 78.9528 27.2855ZM80.7089 17.0063C80.0331 16.2639 79.205 15.8927 78.2247 15.8927C77.2539 15.8927 76.4258 16.2639 75.7405 17.0063C75.0553 17.7391 74.7126 18.6814 74.7126 19.8331C74.7126 20.9847 75.0553 21.9317 75.7405 22.6741C76.4258 23.4165 77.2539 23.7877 78.2247 23.7877C79.205 23.7877 80.0331 23.4165 80.7089 22.6741C81.3941 21.9317 81.7368 20.9847 81.7368 19.8331C81.7368 18.6814 81.3941 17.7391 80.7089 17.0063ZM100.89 21.1465H90.5113C90.6636 21.927 91.0776 22.5885 91.7534 23.131C92.4291 23.664 93.281 23.9305 94.3089 23.9305C95.0513 23.9305 95.7366 23.7877 96.3648 23.5022C97.0025 23.2071 97.4498 22.9121 97.7068 22.617L98.1208 22.1745L100.162 24.8014L99.9054 25.0584C99.7817 25.1821 99.5247 25.3867 99.1345 25.6723C98.7442 25.9578 98.3302 26.2148 97.8924 26.4432C97.4546 26.6621 96.8835 26.8572 96.1792 27.0286C95.4844 27.1999 94.7658 27.2855 94.0234 27.2855C91.9199 27.2855 90.1258 26.5574 88.641 25.1012C87.1562 23.6354 86.4139 21.8794 86.4139 19.8331C86.4139 17.7867 87.1467 16.0354 88.6125 14.5792C90.0782 13.1135 91.8343 12.3806 93.8806 12.3806C95.9269 12.3806 97.6306 13.0659 98.9917 14.4364C100.353 15.7975 101.033 17.5012 101.033 19.5475L100.89 21.1465ZM95.9936 16.4923C95.4225 15.9974 94.7182 15.7499 93.8806 15.7499C93.043 15.7499 92.3292 15.9926 91.7391 16.478C91.1585 16.9634 90.7492 17.5964 90.5113 18.3768H97.0929C96.9406 17.6154 96.5742 16.9872 95.9936 16.4923ZM111.136 12.5234V16.478C110.84 16.3828 110.403 16.3305 109.822 16.321C108.785 16.321 107.961 16.6493 107.352 17.3061C106.753 17.9628 106.453 18.9051 106.453 20.1329V27H102.512V12.6661H106.453V14.4222C106.567 14.2889 106.729 14.1176 106.938 13.9082C107.148 13.6893 107.604 13.4038 108.309 13.0516C109.023 12.6994 109.77 12.5234 110.55 12.5234H111.136Z" fill="black"/>
+					<rect width="23.1" height="33" fill="url(#pattern0)"/>
+					<defs>
+					<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+					<use xlink:href="#image0_122_2633" transform="matrix(0.00473037 0 0 0.00331126 0.0293283 0)"/>
+					</pattern>
+					<image id="image0_122_2633" width="199" height="302" xlink:href="data:image/png;base64,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"/>
+					</defs>
+				</svg></a>
+			</div>		
+			
+			<nav class="footer__list_nav">
+				<ul class="footer__nav">
+					<li><a href="#" class="footer__nav__item">
+						<span class="footer__nav__label">Диагностика</span>
+					</a></li>
+
+					<li><a href="#" class="footer__nav__item">
+						<span class="footer__nav__label">Стоимость</span>
+					</a></li>
+
+					<li><a href="#" class="footer__nav__item">
+						<span class="footer__nav__label">Мастера</span>
+					</a></li>
+
+					<li><a href="#" class="footer__nav__item">
+						<span class="footer__nav__label">Отзывы</span>
+					</a></li>
+
+					<li><a href="#" class="footer__nav__item">
+						<span class="footer__nav__label">Вопросы</span>
+					</a></li>
+
+					<li><a href="#" class="footer__nav__item">
+						<span class="footer__nav__label">Карта сайта</span>
+					</a></li>
+				</ul>
+			</nav>
+		</section>
+
+		<section class="footer__pay">
+			<span class="footer__pay__text">Способы оплаты:</span>
+			<div class="footer__pay__block">
+				<button class="footer__pay__block__button pointer"><img class="footer__pay__block__button__image" src="images/pay-mir.svg" alt="mir"></button>
+				<button class="footer__pay__block__button pointer"><img class="footer__pay__block__button__image" src="images/pay-mscard.svg" alt="mscard"></button>
+				<button class="footer__pay__block__button pointer"><img class="footer__pay__block__button__image" src="images/pay-visa.svg" alt="visa"></button>
+				<button class="footer__pay__block__button pointer"><img class="footer__pay__block__button__image" src="images/pay-apple.svg" alt="applepay"></button>
+				<button class="footer__pay__block__button pointer"><img class="footer__pay__block__button__image" src="images/pay-google.svg" alt="googlepay"></button>
+				<button class="footer__pay__block__button pointer footer__pay__block__button__cash">Наличные</button>
+			</div>
+		</section>
+
+		<section class="footer__description">
+			<span class="footer__description__text">Сервис ремонта бытовой и цифровой техники</span>
+			<span class="footer__description__text">ЧПТУП «МИКАИЛ» 192007601</span>
+		</section>
+	</footer>
+</body>
+</html>

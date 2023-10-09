@@ -1,0 +1,385 @@
+/*----------------MOBILE----------------*/
+.header
+{
+    height: 713px;
+}
+.header__list_nav
+{
+    display: none;
+}
+.header__background
+{
+    left: 6%;
+
+    width: 420px;
+}
+.header__graphic
+{
+    left: 100px;
+
+    height: 272px;
+    margin: 0;
+}
+.header__repairman
+{
+    right: 0;
+    left: auto;
+
+    width: 349px;
+}
+.header__washer
+{
+    right: auto;
+    left: 0;
+
+    width: 215px;
+}
+
+.offer
+{
+    display: block;
+
+    width: 100%;
+}
+.offer__title,
+.offer__description
+{
+    text-align: left;
+}
+.offer__title
+{
+    font-size: 38px;
+}
+.offer__description
+{
+    font-size: 18px;
+
+    width: 350px;
+}
+.offer__button
+{
+    position: absolute;
+    bottom: -220px;
+    left: calc(50% - 111px);
+
+    display: flex;
+}
+.advantages
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    padding: 36px 50px 75px 30px;
+
+    align-items: center;
+    gap: 30px;
+}
+.advantages__block:nth-of-type(n + 2)
+{
+    border: none;
+}
+.problem
+{
+    padding: 75px 30px;
+}
+.problem__header
+{
+    margin-bottom: 16px;
+}
+
+.problem__header_title
+{
+    font-size: 30px;
+
+    margin-top: 5px;
+
+    letter-spacing: -.45px;
+}
+
+.problem__selection
+{
+    align-items: flex-start;
+}
+.problem__selection__dropdown
+{
+    margin-bottom: 33px;
+}
+.problem__selection__dropdown__button
+{
+    padding: 21px 25px;
+
+    text-align: left;
+}
+
+.problem__selection__dropdown__button::after
+{
+    right: 25px;
+}
+
+.problem__background
+{
+    width: 420px;
+    height: 458px;
+    margin-bottom: 35px;
+
+    order: 2;
+}
+.problem__background__graphic
+{
+    position: absolute;
+    top: 85px;
+    right: 0;
+
+    height: 487px;
+
+    transform: rotate(90deg);
+}
+.problem__background__washer
+{
+    position: absolute;
+    top: 0;
+    right: 68px;
+
+    height: 458px;
+}
+.problem__background__square-star
+{
+    position: absolute;
+    top: 326px;
+    right: 309px;
+
+    height: 40px;
+}
+.price__table_global
+{
+    display: none;
+}
+.price__table_mobile
+{
+    display: table;
+
+    margin-bottom: 35px;
+}
+.price__table__row td,
+.price__table__row th
+{
+    padding: 7.5px 0;
+}
+.team__card:nth-of-type(2)
+{
+    display: none;
+}
+.team__header_description
+{
+    font-size: 18px;
+}
+.team__header_title
+{
+    font-size: 30px;
+}
+.feedback
+{
+    height: 647px;
+    padding: 75px 30px;
+}
+.feedback__header_title
+{
+    font-size: 30px;
+
+    letter-spacing: -.45px;
+}
+.feedback__card__avatar
+{
+    width: 54px;
+    height: 54px;
+}
+.feedback__card
+{
+    font-size: 16px;
+
+    width: 360px;
+    height: 360px;
+    padding: 30px;
+}
+.feedback__card__client__name
+{
+    font-size: 18px;
+}
+.rating
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 515px;
+    padding: 75px 30px;
+
+    gap: 25px;
+    align-items: center;
+}
+.rating__card
+{
+    display: flex;
+    flex-direction: row;
+
+    width: 360px;
+    height: 105px;
+    padding: 35px 20px ;
+
+    justify-content: center;
+    align-items: center;
+}
+.rating__card__score
+{
+    padding: 0;
+    padding-right: 25px;
+
+    border: none;
+    border-right: 1px solid #e3e3e3;
+}
+
+
+.rating__card__company
+{
+    height: 30px;
+}
+.rating__card__company_fix
+{
+    height: 23px;
+}
+.question-and-answer
+{
+    height: 830px;
+    padding: 75px 30px;
+
+    gap: 35px;
+}
+.question-and-answer__header
+{
+    width: 350px;
+
+    text-align: left;
+}
+.question-and-answer__header__title
+{
+    font-size: 30px;
+    line-height: 100%; /* 30px */
+
+    letter-spacing: -.45px;
+}
+.question-and-answer__header__description
+{
+    width: 100%;
+}
+.question-and-answer__block
+{
+    width: 360px;
+    height: 100%;
+    padding: 19px 25px;
+}
+.question-and-answer__block__decription
+{
+    font-size: 17px;
+
+    letter-spacing: -.36px;
+}
+.question-and-answer__block__button
+{
+    font-size: 25px;
+
+    width: 30px;
+    height: 30px;
+    margin-left: 40px;
+
+    flex-shrink: 0;
+}
+.application
+{
+    height: 488px;
+}
+.application__block
+{
+    width: 360px;
+    height: 388px;
+    padding: 75px 30px;
+}
+.application__header
+{
+    width: 300px;
+}
+.application__header__title
+{
+    font-size: 30px;
+
+    letter-spacing: -.45px;
+}
+.application__header__description
+{
+    font-size: 16px;
+}
+.application__form
+{
+    gap: 10px;
+}
+.application__phone,
+.application__button
+{
+    width: 300px;
+    height: 57px;
+}
+.contacts
+{
+    height: 741px;
+    margin: 0;
+    padding: 75px 30px;
+
+    gap: 0;
+}
+.contacts__header
+{
+    width: 100%;
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+.contacts__header__title
+{
+    font-size: 30px;
+
+    letter-spacing: -.45px;
+}
+.contacts__map
+{
+    width: 360px;
+    height: 231px;
+    margin-bottom: 25px;
+}
+.contacts__wrap
+{
+    width: 360px;
+
+    flex-wrap: nowrap;
+    gap: 25px;
+}
+.footer__nav
+{
+    width: 330px;
+}
+.footer__pay
+{
+    height: 222px;
+}
+.footer__pay__block
+{
+    width: 320px;
+}
+.footer__description
+{
+    flex-direction: column;
+
+    padding: 0 35px 250px;
+
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
