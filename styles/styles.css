@@ -1230,7 +1230,12 @@ td.price__table__price_free
 
 
 /*----------------PAY----------------*/
-.footer__pay
+.footer__pay{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer__pay__wrap
 {
     display: flex;
 

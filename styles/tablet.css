@@ -451,7 +451,7 @@
     flex-wrap: wrap;
     gap: 30px;
 }
-.footer__pay
+.footer__pay__wrap
 {
     flex-direction: column;
 
